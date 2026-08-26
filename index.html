@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-logo">DataSync Pro</div>
+      <ul class="sidebar-nav">
+        <li class="sidebar-item sidebar-item--active">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span class="nav-label">Dashboard</span>
+        </li>
+        <li class="sidebar-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+          <span class="nav-label">Tables</span>
+        </li>
+        <li class="sidebar-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+          <span class="nav-label">Billing</span>
+        </li>
+        <li class="sidebar-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span class="nav-label">RTL</span>
+        </li>
+      </ul>
+      <ul class="sidebar-nav sidebar-nav--secondary">
+        <li class="sidebar-item">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span class="nav-label">Profile</span>
+        </li>
+        <li>
+          <a href="./signin.html" class="sidebar-item" style="text-decoration: none; color: inherit;">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span class="nav-label">signin</span>
+          </a>
+        </li>
+        <li>
+          <a href="./signup.html" class="sidebar-item" style="text-decoration: none; color: inherit;">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+            <span class="nav-label">signup</span>
+          </a>
+        </li>
+      </ul>
+      <p class="sidebar-help">
+        <span class="nav-label">Need help?</span>
+      </p>
+    </div>
+
+    <div class="main">
+    <div class="topbar">
+      <form class="topbar-search">
+        <div class="search-wrapper" style="position: relative; display: flex; align-items: center;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; left: 16px; color: var(--text-secondary); pointer-events: none;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" placeholder="Type here..." name="query" style="padding-left: 42px;" />
+        </div>
+      </form>
+      <div class="topbar-icons">
+        <img
+          class="topbar-avatar"
+          src="./assets/images/Bob_S.jpg"
+          alt="Profile"
+        />
+        <svg class="topbar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer;"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+        <div class="notification-wrapper" style="position: relative; display: inline-flex; align-items: center; cursor: pointer;">
+          <svg class="topbar-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          <span class="badge" style="position: absolute; top: -2px; right: -2px; width: 8px; height: 8px; background-color: #EF4444; border-radius: 50%; border: 2px solid var(--bg-page);"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card stat-card--money">
+        <div class="stat-card-text">
+          <p class="stat-card-label">Today's money</p>
+          <p class="stat-card-value">$53,000</p>
+        </div>
+        <div class="stat-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M12 11h4v2h-4z"></path></svg>
+        </div>
+      </div>
+      <div class="stat-card stat-card--users">
+        <div class="stat-card-text">
+          <p class="stat-card-label">Today's Users</p>
+          <p class="stat-card-value">2,300</p>
+        </div>
+        <div class="stat-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </div>
+      </div>
+      <div class="stat-card stat-card--clients">
+        <div class="stat-card-text">
+          <p class="stat-card-label">New Client</p>
+          <p class="stat-card-value">+3,052</p>
+        </div>
+        <div class="stat-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        </div>
+      </div>
+      <div class="stat-card stat-card--sales">
+        <div class="stat-card-text">
+          <p class="stat-card-label">Total Sales</p>
+          <p class="stat-card-value">$173,000</p>
+        </div>
+        <div class="stat-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-row">
+      <div class="welcome-card">
+        <img
+          class="welcome-avatar"
+          src="./assets/images/mark_Johnson.jpg"
+          alt=""
+        />
+        <p class="welcome-greeting">Welcome back</p>
+        <h3 class="welcome-name">Mark Johnson</h3>
+        <p class="welcome-text">
+          Welcome to Mark Johnson. Welcome a high-quality professional portrait.
+          We inelp you to orant your mosroon. enonging and benefits.
+        </p>
+
+        <button class="welcom-btn">Tap to record</button>
+      </div>
+
+      <div class="feedback-card">
+        <h3 class="card-title">Customer Feedback</h3>
+        <svg class="feedback-quote-icon" width="28" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: var(--text-secondary); opacity: 0.3; margin-bottom: 12px;"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.635-3.996 5.846h3.983v10h-9.983z"/></svg>
+        <p class="feedback-text">
+          "Excellent service and intuitive platform Highly recommend."
+        </p>
+        <p class="feedback-author">-Sarah L.</p>
+      </div>
+
+      <div class="referrals-card">
+        <div class="referrals-header">
+          <h3 class="card-title">Recent Referrals</h3>
+          <span class="referrals-menu">&#8942;</span>
+        </div>
+        <img
+          class="referrals-image"
+          src="./assets/images/recent_referrals.jpg"
+          alt=""
+        />
+        <h3 class="referrals-subtitle">Recent Referrals</h3>
+        <p class="referrals-names">John D., Emily K., Michael B., Jessica R.</p>
+      </div>
+    </div>
+
+    <div class="bottom-row">
+      <div class="performance-card">
+      <img
+        class="performance-image"
+        src="./assets/images/global_performance_summary.jpg"
+        alt="Dashboard image"
+      />
+      <h3 class="performance-title">Global Performance Summary</h3>
+      <p class="performance-text">
+        Our global strategy shows growth significant growth and postive market
+        impact in Q3
+      </p>
+    </div>
+
+    <div class="active-users-grid">
+      <div class="user-card">
+        <img class="user-image" src="./assets/images/Alica_M.jpg" alt="" />
+        <p class="user-name">Alice M.</p>
+        <p class="user-status">Active Now</p>
+      </div>
+      <div class="user-card">
+        <img class="user-image" src="./assets/images/Bob_S.jpg" alt="" />
+        <p class="user-name">Bob S.</p>
+        <p class="user-status">Active Now</p>
+      </div>
+      <div class="user-card">
+        <img class="user-image" src="./assets/images/Charli_H.jpg" alt="" />
+        <p class="user-name">Charile H.</p>
+        <p class="user-status">Active Now</p>
+      </div>
+      <div class="user-card">
+        <img class="user-image" src="./assets/images/Diana W.jpg" alt="" />
+        <p class="user-name">Diana W.</p>
+        <p class="user-status">Active Now</p>
+      </div>
+    </div>
+   </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - DataSync Pro</title>
+    <!-- Link the main style sheet and sign-up style sheet -->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/signupstyle.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <!-- Left side: Office collaboration banner image with rounded corners -->
+      <div class="signup-hero">
+        <img src="./assets/images/global_performance_summary.jpg" alt="Team Collaboration" />
+      </div>
+
+      <!-- Right side: Dark sign-up card container -->
+      <div class="signup-form-area">
+        <div class="signup-card">
+          <h1 class="signup-title">Sign Up</h1>
+          <form action="./signin.html" class="signup-form">
+            
+            <div class="input-group">
+              <label for="FullName">Full Name</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </span>
+                <input type="text" id="FullName" name="FullName" placeholder="Full Name" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="Email">Email</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </span>
+                <input type="email" id="Email" name="Email" placeholder="Email address" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="Password">Password</label>
+              <div class="input-wrapper">
+                <span class="input-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </span>
+                <input type="password" id="Password" name="Password" placeholder="Password" required />
+                <button type="button" class="password-toggle-btn" id="password-toggle" aria-label="Toggle Password Visibility">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-eye">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary">Create Account</button>
+
+            <div class="form-links">
+              <p class="signin-redirect">
+                Already have an account? <a href="./signin.html">Sign In</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Password visibility toggle script -->
+    <script>
+      document.getElementById('password-toggle').addEventListener('click', function() {
+        const passwordInput = document.getElementById('Password');
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        this.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
